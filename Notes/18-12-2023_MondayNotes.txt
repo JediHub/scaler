@@ -1,0 +1,76 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+      System.out.print("Hello, World!"); // Hello, World!welcome
+      System.out.print("welcome"); 
+      System.out.println("Hello, World!"); // Hello, World!
+      System.out.println("10"+"13"); //1013
+      System.out.println("10 + 13"); // 10 + 13
+      System.out.println(10+13); //23
+      System.out.println("10"+13);//1013
+      System.out.println(10+"13");    // 1013
+      System.out.println("10"+13+11); //101311
+      System.out.println(10+11+"13");  //2113
+
+      int i=5; 
+      long r=10000000000L; // default integer
+      float f = 4.5494858F; //default double
+      double d =  4.334343;
+      
+      // case 1 -  smallType => largeType
+      // Implicit TypeCasting  -> default compiler typecasting
+      int i2=5;
+      long l2=i;
+      System.out.println(l2);
+
+      // case 2 -  smallType => largeType
+      // Implicit TypeCasting  -> default compiler typecasting
+      int i3=5;
+      long l3=i;
+      System.out.println(l3);
+
+      // case 2 -  largeType => smallType
+      // Implicit TypeCasting  -> default compiler typecasting
+      long tr = 1000L;
+      int ir= (int)tr; // explicit typecasting
+      System.out.println(ir); // without typecasting it compiler will give you warning
+
+      // case 3 -  largeType => smallType outside limit
+      // Implicit TypeCasting  -> default compiler typecasting
+      long cl = 10000000000003L;
+      int ci= (int)cl; // explicit typecasting causing garbage value throw
+      System.out.println(ci); // without typecasting it compiler will give you warning
+
+      Scanner scn = new Scanner(System.in);
+      int iInput = scn.nextInt();
+      long lInput = scn.nextLong();
+      float fInput =  scn.nextFloat();
+      double dInput = scn.nextDouble();
+
+      String sl =  scn.nextLine();
+      String str = scn.next();
+
+      System.out.println(iInput) ;
+      System.out.println(lInput) ;
+      System.out.println(fInput) ;
+      System.out.println(dInput) ;
+
+      System.out.println(sl) ;
+      System.out.println(str) ;
+      
+  }
+}
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+      Scanner scn =  new Scanner(System.in);
+      String name1 = scn.nextLine();
+      String name2 = scn.nextLine();
+      System.out.println(name1+" loves "+name2);
+  }
+}
